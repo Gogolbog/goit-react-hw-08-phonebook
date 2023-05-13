@@ -4,7 +4,7 @@ import {
   createContactsThunk,
   deleteContactsThunk,
   getContactsThunk,
-} from 'redux/thunk';
+} from 'redux/contacts/thunk';
 import { contactsInitialState } from './initial';
 
 const STATUS = {

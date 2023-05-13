@@ -1,14 +1,15 @@
 import { ContactListWrapper } from './ContactListStyled';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { deleteContactsThunk, getContactsThunk } from 'redux/thunk';
+import { deleteContactsThunk, getContactsThunk } from 'redux/contacts/thunk';
 import React, { useEffect } from 'react';
+import { selectContacts, selectFilter } from 'selectors';
 
 export const ContactList = () => {
   const dispatch = useDispatch();
 
-  const contactsArr = useSelector(state => state.contacts.items);
-  const filter = useSelector(state => state.filter);
+  const contactsArr = useSelector(selectContacts);
+  const filter = useSelector(selectFilter);
 
   useEffect(() => {
     dispatch(getContactsThunk());

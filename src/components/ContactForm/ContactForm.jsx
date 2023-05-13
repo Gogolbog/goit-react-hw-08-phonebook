@@ -1,15 +1,16 @@
 import { nanoid } from 'nanoid';
 import React, { useState } from 'react';
-import { Button, Form, Input, Label } from './ContactFormStyled';
+import { Button, Form, H1, Input, Label } from './ContactFormStyled';
 import { useDispatch, useSelector } from 'react-redux';
-import { createContactsThunk } from 'redux/thunk';
+import { createContactsThunk } from 'redux/contacts/thunk';
+import { selectContacts } from 'selectors';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contacts.items);
+  const contacts = useSelector(selectContacts);
 
   const findSimilarContact = () => {
     return contacts.find(contact => contact.name === name);
@@ -28,6 +29,7 @@ export default function ContactForm() {
 
   return (
     <>
+      <H1>Phone Book</H1>
       <Form onSubmit={handleSubmit}>
         <Label>
           Name:

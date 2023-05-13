@@ -28,15 +28,31 @@ export const Button = styled.button`
   font-size: 1rem;
   border-radius: 5px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   cursor: pointer;
 
   &:hover {
-    background-color: #2E8B57;
+    background-color: #2e8b57;
   }
 
   &:active {
-    background-color: #145A32;
+    background-color: #145a32;
   }
+`;
+
+export const H1 = styled.h1`
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+`;
+
+export const H2 = styled.h2`
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
 `;
