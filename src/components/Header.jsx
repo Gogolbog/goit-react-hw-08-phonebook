@@ -39,7 +39,7 @@ export const Header = () => {
         </Box>
         <Box ml={4}>
           {!userIsAuth && (
-            <ChakraLink as={Link} to="/signup">
+            <ChakraLink as={Link} to="/register">
               SignUp
             </ChakraLink>
           )}

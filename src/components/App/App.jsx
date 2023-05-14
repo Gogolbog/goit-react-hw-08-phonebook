@@ -31,7 +31,7 @@ export default function App() {
           }
         />
         <Route
-          path="signup"
+          path="register"
           element={
             <PublicRoute>
               <SignUp />

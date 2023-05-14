@@ -65,7 +65,7 @@ const Home = () => {
             <Button as={Link} to="/login" colorScheme="blue" mr={4}>
               Log in
             </Button>
-            <Button as={Link} to="/signup" colorScheme="teal">
+            <Button as={Link} to="/register" colorScheme="teal">
               Sign up
             </Button>
           </Box>

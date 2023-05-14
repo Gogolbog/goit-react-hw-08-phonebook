@@ -57,7 +57,7 @@ export const LoginForm = () => {
           Don't have account yet?{' '}
           <ChakraLink
             as={Link}
-            to="/signup"
+            to="/register"
             color="blue.500"
             textDecoration="underline"
             _hover={{ color: 'blue.600', textDecoration: 'none' }}
