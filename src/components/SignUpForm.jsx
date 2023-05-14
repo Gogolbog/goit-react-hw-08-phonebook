@@ -22,12 +22,12 @@ export const SignUpForm = () => {
         password,
       })
     )
+      .unwrap()
       .then(() => {
-        navigate('/login');
+        navigate('/');
       })
       .catch(error => {
         console.log(error);
-        navigate('/signup');
       })
       .finally(() => {
         setName('');

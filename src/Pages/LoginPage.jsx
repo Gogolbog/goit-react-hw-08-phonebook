@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import { LoginForm } from 'components/LoginForm';
 
-export const Login = () => {
+const Login = () => {
   return (
     <Box maxW="md" mx="auto" textAlign="center">
       <Heading as="h1" mb={4} fontSize="4xl">
@@ -14,3 +14,5 @@ export const Login = () => {
     </Box>
   );
 };
+
+export default Login;

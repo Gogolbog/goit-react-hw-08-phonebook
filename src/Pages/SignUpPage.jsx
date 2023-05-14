@@ -2,7 +2,7 @@ import { Box, Stack, Text, Link as ChakraLink } from '@chakra-ui/react';
 import { SignUpForm } from 'components/SignUpForm';
 import { Link } from 'react-router-dom';
 
-export const SignUp = () => {
+const SignUp = () => {
   return (
     <Box maxW="md" mx="auto">
       <Text fontSize="3xl" fontWeight="bold" textAlign="center" mb={8}>
@@ -26,3 +26,5 @@ export const SignUp = () => {
     </Box>
   );
 };
+
+export default SignUp;

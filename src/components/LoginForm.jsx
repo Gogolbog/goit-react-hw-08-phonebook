@@ -1,7 +1,15 @@
-import { Button, FormControl, FormLabel, Input, Stack } from '@chakra-ui/react';
+import {
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  Stack,
+  Text,
+  Link as ChakraLink,
+} from '@chakra-ui/react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from 'redux/auth/operations';
 
 export const LoginForm = () => {
@@ -9,6 +17,7 @@ export const LoginForm = () => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const handleSubmit = e => {
     e.preventDefault();
 
@@ -18,8 +27,9 @@ export const LoginForm = () => {
         password,
       })
     )
+      .unwrap()
       .then(() => {
-        navigate('/contacts');
+        navigate('/');
       })
       .catch(error => console.log(error))
       .finally(() => {
@@ -41,6 +51,20 @@ export const LoginForm = () => {
         <Button type="submit" colorScheme="blue" size="lg" w="full">
           Log in
         </Button>
+      </Stack>
+      <Stack mt={8} direction="row" spacing={4} alignItems="center">
+        <Text>
+          Don't have account yet?{' '}
+          <ChakraLink
+            as={Link}
+            to="/signup"
+            color="blue.500"
+            textDecoration="underline"
+            _hover={{ color: 'blue.600', textDecoration: 'none' }}
+          >
+            SignUp
+          </ChakraLink>
+        </Text>
       </Stack>
     </form>
   );

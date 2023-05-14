@@ -4,7 +4,7 @@ import { ContactList } from 'components/ContactList/ContactList';
 import { Filter } from 'components/Filter/Filter';
 import React from 'react';
 
-export const ContactsPage = () => {
+const ContactsPage = () => {
   return (
     <PageWrapper>
       <ContactForm />
@@ -15,3 +15,4 @@ export const ContactsPage = () => {
     </PageWrapper>
   );
 };
+export default ContactsPage;
