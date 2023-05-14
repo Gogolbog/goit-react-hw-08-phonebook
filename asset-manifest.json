@@ -1,13 +1,26 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.6409ba25.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.fedd9f42.js",
+    "static/js/997.551d10ed.chunk.js": "/goit-react-hw-08-phonebook/static/js/997.551d10ed.chunk.js",
+    "static/js/228.4e02e990.chunk.js": "/goit-react-hw-08-phonebook/static/js/228.4e02e990.chunk.js",
+    "static/js/418.4d1fcfcc.chunk.js": "/goit-react-hw-08-phonebook/static/js/418.4d1fcfcc.chunk.js",
+    "static/js/380.a111e22d.chunk.js": "/goit-react-hw-08-phonebook/static/js/380.a111e22d.chunk.js",
+    "static/js/33.5868ad67.chunk.js": "/goit-react-hw-08-phonebook/static/js/33.5868ad67.chunk.js",
+    "static/js/950.ec6ffa95.chunk.js": "/goit-react-hw-08-phonebook/static/js/950.ec6ffa95.chunk.js",
+    "static/media/phone-call.png": "/goit-react-hw-08-phonebook/static/media/phone-call.f5c4a91103dabf661640.png",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css.map",
-    "main.6409ba25.js.map": "/goit-react-hw-08-phonebook/static/js/main.6409ba25.js.map"
+    "main.fedd9f42.js.map": "/goit-react-hw-08-phonebook/static/js/main.fedd9f42.js.map",
+    "997.551d10ed.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/997.551d10ed.chunk.js.map",
+    "228.4e02e990.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/228.4e02e990.chunk.js.map",
+    "418.4d1fcfcc.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/418.4d1fcfcc.chunk.js.map",
+    "380.a111e22d.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/380.a111e22d.chunk.js.map",
+    "33.5868ad67.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/33.5868ad67.chunk.js.map",
+    "950.ec6ffa95.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/950.ec6ffa95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.6409ba25.js"
+    "static/js/main.fedd9f42.js"
   ]
 }
