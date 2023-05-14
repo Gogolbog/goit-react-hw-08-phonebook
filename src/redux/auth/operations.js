@@ -16,7 +16,7 @@ export const register = createAsyncThunk(
   'auth/register',
   async (credentials, thunkAPI) => {
     try {
-      const { data } = await axios.post('/users/register', credentials);
+      const { data } = await axios.post('/users/signup', credentials);
       setAuthHeader(data.token);
       toast.success('Registration Successful');
       return data;
