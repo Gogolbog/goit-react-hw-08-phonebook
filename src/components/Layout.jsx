@@ -26,7 +26,6 @@ export const Layout = () => {
         p={4}
         borderRadius="20px 20px 0 0"
         style={{
-          position: 'absolute',
           bottom: 0,
           width: '100%',
         }}
