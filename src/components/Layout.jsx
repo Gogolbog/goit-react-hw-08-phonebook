@@ -8,16 +8,16 @@ export const Layout = () => {
   return (
     <div
       style={{
+        display: 'flex',
+        flexDirection: 'column',
         margin: '0 auto',
         padding: '0 16px',
-
-        position: 'relative',
         minHeight: '100vh',
         maxWidth: 1200,
       }}
     >
       <Header />
-      <Suspense fallback={null}>
+      <Suspense fallback={null} style={{ flex: 1 }}>
         <Outlet />
       </Suspense>
       <Box
@@ -26,7 +26,7 @@ export const Layout = () => {
         p={4}
         borderRadius="20px 20px 0 0"
         style={{
-          bottom: 0,
+          marginTop: 'auto',
           width: '100%',
         }}
       >
